@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@700&display=swap');
+
+body {
+    color: #111;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo Thambi 2', cursive;
+    font-weight: 700;
+    position: absolute;
+}
+
+
+
+.container > span {
+    font-size: 5rem;
+    animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%, 100% {
+        color: #fff;
+        text-shadow: 0 0 12px rgb(160, 32, 240), 0 0 50px rgb(160, 32, 240), 0 0 100px rgb(160, 32, 240);
+    }
+
+    10%, 90% {
+        color: #111;
+        text-shadow: none;
+    }
+}
+
+.container > span:nth-child(2) {
+    animation-delay: 0s;
+}
+.container > span:nth-child(3) {
+    animation-delay: 0s;
+}
+.container > span:nth-child(4) {
+    animation-delay: 0.60s;
+}
+.container > span:nth-child(5) {
+    animation-delay: 0.60s;
+}
+.container > span:nth-child(6) {
+    animation-delay: 0.60s;
+}
+.container > span:nth-child(7) {
+    animation-delay: 0.60s;
+}
+.container > span:nth-child(8) {
+    animation-delay: 1.20s;
+}
+.container > span:nth-child(9) {
+    animation-delay: 1.20s;
+}
+.container > span:nth-child(10) {
+    animation-delay: 1.20s;
+}
+.container > span:nth-child(11) {
+    animation-delay: 1.20s;
+}
+.container > span:nth-child(12) {
+    animation-delay: 1.80s;
+}
+
+.btn {
+    border: none;
+    width: 15em;
+    height: 5em;
+    border-radius: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #1C1A1C;
+    cursor: pointer;
+    transition: all 450ms ease-in-out;
+    text-decoration: none;
+  }
+  
+.sparkle {
+    fill: #AAAAAA;
+    transition: all 800ms ease;
+}
+  
+.text {
+    font-weight: 600;
+    color: #AAAAAA;
+    font-size: medium;
+}
+  
+.btn:hover {
+    background: linear-gradient(0deg, #A47CF3, #683FEA);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+      inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+      0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+      0px 0px 180px 0px #9917FF;
+    transform: translateY(-2px);
+}
+  
+.btn:hover .text {
+    color: white;
+}
+  
+.btn:hover .sparkle {
+    fill: white;
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 600px) {
+    .container > span {
+        font-size: 3rem;
+    }
+
+    .btn {
+        border: none;
+        width: 13em;
+        height: 3em;
+        border-radius: 3em;
+    }
+
+    .text {
+        font-weight: 500;
+    }
+    }
